@@ -1,0 +1,596 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    border-bottom: 2px solid #333;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+}
+
+.contato a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contato a img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.contato a:hover {
+    background-color: #d4af37;
+    color: #000;
+}
+
+.banner {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.banner h1 {
+    font-size: 48px;
+    color: #d4af37;
+    text-shadow: 2px 2px #000;
+}
+
+.sobre {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.sobre-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.advogado-img {
+    width: 30%;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.sobre-texto {
+    width: 60%;
+}
+
+.sobre-texto h2 {
+    color: #d4af37;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+/* Nova seção: Sobre Outro Advogado */
+.sobre-outro {
+    padding: 60px 20px;
+    background-color: #111;
+    color: #fff;
+}
+
+.sobre-outro-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.sobre-outro-texto {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.sobre-outro-img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.sobre-outro-texto h2 {
+    color: #d4af37;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sobre-outro-texto p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.servicos {
+    background-color: #222;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.servicos h2 {
+    color: #d4af37;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.servicos-container ul {
+    list-style-type: none;
+    padding: 0;
+    width: 50%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.servicos-container ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.servicos-img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.btn-contato {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-contato:hover {
+    background-color: #d4af37;
+    color: #000;
+}
+
+.para-que-nos-escolher {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+}
+
+.para-que-nos-escolher h2 {
+    color: #333;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.para-que-nos-escolher-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.para-que-nos-escolher-item {
+    width: calc(50% - 20px);
+    background-color: #fff;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.para-que-nos-escolher-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.para-que-nos-escolher-item h3 {
+    color: #d4af37;
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.para-que-nos-escolher-item p {
+    font-size: 18px;
+    color: #666;
+}
+
+.atendemos-brasil {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.atendemos-brasil-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mapa-brasil {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.atendemos-brasil-texto {
+    width: 60%;
+}
+
+.atendemos-brasil-texto h2 {
+    font-size: 36px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.atendemos-brasil-texto p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.contato-secao {
+    background-color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contato-secao h2 {
+    color: #d4af37;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contato-informacoes {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contato-informacoes li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contato-informacoes a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #333;
+}
+/* Seção: Sobre Outro Advogado */
+.sobre-outro {
+    height: 100vh; /* Ocupa toda a altura da tela */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #111;
+    color: #fff;
+}
+
+.sobre-outro-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo */
+    text-align: center; /* Centraliza o texto */
+}
+
+.sobre-outro-texto {
+    width: 50%; /* Ajustado para centralizar melhor */
+    margin-right: 20px;
+}
+
+.sobre-outro-img {
+    width: 40%; /* Ajustado para centralizar melhor */
+    border-radius: 10px;
+}
+
+.sobre-outro-texto h2 {
+    color: #d4af37;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sobre-outro-texto p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+/* Seção: Atendemos em Todo o Brasil */
+.atendemos-brasil {
+    height: 100vh; /* Ocupa toda a altura da tela */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.atendemos-brasil-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Centraliza o texto */
+}
+
+.mapa-brasil {
+    width: 50%; /* Ajustado para centralizar melhor */
+    margin-right: 20px;
+}
+
+.atendemos-brasil-texto {
+    width: 50%; /* Ajustado para centralizar melhor */
+}
+
+.atendemos-brasil-texto h2 {
+    font-size: 36px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.atendemos-brasil-texto p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+/* Seção: Sobre */
+.sobre {
+    background-color: #333; /* Cinza escuro */
+    color: #fff;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.sobre-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-texto {
+    width: 50%;
+}
+
+.sobre-texto h2 {
+    color: #d4af37; /* Dourado */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.btn-contato {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.btn-contato:hover {
+    background-color: #d4af37;
+    color: #000;
+}
+
+/* Seção: O que Atendemos */
+.servicos {
+    background-color: #222; /* Cinza escuro */
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.servicos h2 {
+    color: #d4af37; /* Dourado */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px; /* Espaço para o botão */
+}
+
+.servicos-container ul {
+    list-style-type: none;
+    padding: 0;
+    width: 50%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.servicos-container ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.servicos-img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.servicos .btn-contato {
+    position: absolute;
+    bottom: 20px; /* Ajustado para estar embaixo do texto */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Seção: Para Que Nos Escolher */
+.para-que-nos-escolher {
+    background-color: #333; /* Cinza escuro */
+    padding: 60px 20px;
+}
+
+.para-que-nos-escolher h2 {
+    color: #d4af37; /* Dourado */
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.para-que-nos-escolher-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.para-que-nos-escolher-item {
+    width: calc(50% - 20px);
+    background-color: #444; /* Cinza médio para os itens */
+    border: 2px solid #d4af37; /* Dourado */
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.para-que-nos-escolher-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.para-que-nos-escolher-item h3 {
+    color: #d4af37; /* Dourado */
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.para-que-nos-escolher-item p {
+    font-size: 18px;
+    color: #666;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 80px; /* Ajuste a altura da imagem conforme necessário */
+    width: auto; /* Mantém a proporção da imagem */
+}
+.banner {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.banner h1 {
+    font-size: 3em; /* Ajuste conforme necessário */
+    color: #d4af37; /* Cor dourada */
+    text-shadow: 2px 2px #000; /* Adiciona uma sombra para melhor visibilidade */
+    margin: 0;
+}
+
+.banner h2.subtitulo {
+    font-size: 1.5em; /* Ajuste conforme necessário */
+    color: #d4af37; /* Cor dourada */
+    margin-top: 10px; /* Espaço acima do subtítulo */
+    font-family: 'Georgia', serif; /* Fonte diferenciada - ajuste conforme necessário */
+}
